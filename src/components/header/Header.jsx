@@ -4,9 +4,9 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header className='container'>
+    <header>
       <nav>
-        <div className='logo'>LOGO</div>
+        <div className='logo'>JL DAQUIPA</div>
         <ul>
           <li className='active'>Home</li>
           <li>Portfolio</li>

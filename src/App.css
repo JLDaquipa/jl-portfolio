@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -26,6 +26,7 @@
 
   /*========== Font weight ==========*/
   --font-thin: 100;
+  --font-extra-light: 200;
   --font-light: 300;
   --font-normal: 400;
   --font-medium: 500;
@@ -113,9 +114,13 @@ img {
   height: auto;
 }
 
+main {
+  height: 100%;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 6rem 0 2rem;
+  padding: 0 3rem ;
 }
 
 .section__title {
@@ -136,7 +141,10 @@ img {
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 1400px;
+  max-width: 1440px;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
@@ -149,11 +157,13 @@ img {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
+  border: 1px solid gray;
   background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 1.25rem 2rem;
-  border-radius: 1rem;
+  color: black;
+  padding: 1.2rem 1.6rem;
+  border-radius: 50px;
   font-weight: var(--font-medium);
+  
 }
 
 .button:hover {

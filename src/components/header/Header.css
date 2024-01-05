@@ -36,6 +36,7 @@ header nav ul li {
 .logo {
   display: flex;
   align-items: center;
+  font-weight: 800;
 }
 
 .resume-btn {
