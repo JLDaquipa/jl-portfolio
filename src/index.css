@@ -20,6 +20,7 @@ textarea {
 
 body {
   background-color: #171A1B;
+  color: white;
 }
 
 h1,
@@ -39,8 +40,8 @@ a {
 
 button {
   cursor: pointer;
-  border: none;
   outline: none;
+  border-radius: .75rem;
 }
 
 img {
@@ -49,17 +50,12 @@ img {
 }
 
 @layer components {
-  /* .max-container {
-    max-width: 1440px;
-    margin: 0 auto;
+  .nav-item {
+    @apply py-5 px-[1.6875rem] border-l-[0.5px] border-slate-gray cursor-pointer;
   }
 
-  .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
-  } */
-
-  .nav-item {
-    @apply py-5 px-[1.6875rem] border-l-[0.5px] border-slate-gray;
+  .section {
+    @apply h-full w-full overflow-hidden;
   }
 }
 
