@@ -51,12 +51,23 @@ img {
 
 @layer components {
   .nav-item {
-    @apply py-5 px-[1.6875rem] border-l-[0.5px] border-slate-gray cursor-pointer;
+    @apply py-5 px-[1.6875rem] border-l-[.0313rem] border-slate-gray cursor-pointer;
   }
 
   .section {
-    @apply h-full w-full overflow-hidden;
+    @apply h-full w-full overflow-hidden snap-start snap-always;
   }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 }
 
 @layer utilities {

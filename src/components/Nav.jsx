@@ -1,14 +1,14 @@
 
 const Nav = () => {
   return (
-    <div className='flex flex-col'>
-      <div className='nav-items flex flex-col gap-8 relative left-[-0.5px]'>
+    <div className='flex flex-col bg-primary z-10'>
+      <div className='nav-items flex flex-col gap-8 relative left-[-0.0625rem]'>
         {/* Home Nav */}
-        <div className='nav-item border-primary-yellow'>
+        <a href="#hero" className='nav-item border-primary-yellow'>
           <svg className="stroke-primary-yellow" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
             <path d="M2.625 14L13.0713 3.55249C13.5847 3.04032 14.4153 3.04032 14.9275 3.55249L25.375 14M5.25 11.375V23.1875C5.25 23.912 5.838 24.5 6.5625 24.5H11.375V18.8125C11.375 18.088 11.963 17.5 12.6875 17.5H15.3125C16.037 17.5 16.625 18.088 16.625 18.8125V24.5H21.4375C22.162 24.5 22.75 23.912 22.75 23.1875V11.375M9.625 24.5H19.25" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-        </div>
+        </a>
         {/* Work Nav */}
         <div className='nav-item'>
           <svg className="stroke-slate-gray" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
