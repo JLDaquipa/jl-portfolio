@@ -58,6 +58,10 @@ img {
     @apply h-full w-full overflow-hidden snap-start snap-always;
   }
 
+  .work-card {
+    @apply w-[28.5rem] border-thin border-slate-gray border-opacity-60 bg-secondary rounded-xl p-4 transition-all ease-in-out hover:border-primary-yellow hover:scale-[1.01];
+  }
+
   .thumbnail-placeholder {
     @apply w-full h-[15rem] rounded-t-xl;
   }
