@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
+import Hero from "./sections/Hero";
+import Work from "./sections/Work";
 import Lottie from 'react-lottie';
 import animationData from './assets/lotties/curveline-animation-1.json';
 import useWindowDimensions from './utilities/UseWindowDimensions';
@@ -17,7 +18,7 @@ const App = () => {
   };
   return (
     <div className="w-screen min-h-[600px] h-screen  bg-primary flex flex-row-reverse">
-      <header className="w-fit border-l-[0.5px] border-slate-gray pb-[42px] pt-[22px]">
+      <header className="w-fit border-l-[0.5px] border-slate-gray pb-[2.625rem] pt-5">
         <nav className="w-full h-full flex justify-center">
           <Nav />
         </nav>
@@ -33,6 +34,7 @@ const App = () => {
           />
         </div>
         <Hero />
+        <Work />
       </main>
     </div>
   )

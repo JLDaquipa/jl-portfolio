@@ -51,11 +51,20 @@ img {
 
 @layer components {
   .nav-item {
-    @apply py-5 px-[1.6875rem] border-l-[.0313rem] border-slate-gray cursor-pointer;
+    @apply py-5 px-[1.6875rem] border-l-[.0313rem] border-slate-gray border-opacity-0 cursor-pointer;
   }
 
   .section {
     @apply h-full w-full overflow-hidden snap-start snap-always;
+  }
+
+  .thumbnail-placeholder {
+    @apply w-full h-[15rem] rounded-t-xl;
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
   }
 
   .hide-scrollbar::-webkit-scrollbar {

@@ -14,6 +14,16 @@ export default {
       '2xl': ['24px', '29.26px'],
       '3xl': ['28px', '50px'],
     },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      'thin': '0.5px',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+      '8': '8px',
+    },
     extend: {
       fontFamily: {
         oxanium: ['Oxanium', 'sans-serif'],
