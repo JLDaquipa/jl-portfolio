@@ -1,9 +1,10 @@
 import Button from '../components/Button';
 import { motion } from "framer-motion";
 
-const Hero = () => {
+// eslint-disable-next-line react/prop-types
+const Hero = ({observer}) => {
   return (
-    <section className="section relative h-full w-full flex p-[2.625rem] z-10" id='hero'>
+    <section className="section relative h-full w-full flex p-[2.625rem] z-10" id='hero' ref={observer}>
         <div className='self-end z-20'>
           <div className='flex gap-4 mb-3'>
             <Button className='hover:translate-y-[-2px] transition ease-in-out' type="fill" onClick={()=>{}}>

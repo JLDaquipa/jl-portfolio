@@ -8,6 +8,11 @@ import { useEffect, useRef, useState } from "react";
 
 const App = () => {
   const { width } = useWindowDimensions();
+
+  const [currentSection, setCurrentSection] = useState("home");
+  const ref = useRef();
+  const homeSectionRef = useRef();
+  const workSectionRef = useRef();
   
   const defaultOptions = {
     loop: true,
@@ -18,33 +23,28 @@ const App = () => {
     }
   };
 
-  const [position, setPosition] = useState();
-  const ref = useRef();
-  const sectionRef = useRef();
-
   useEffect(() => {
     function onScroll() {
-      const sectionTop = sectionRef.current.offsetTop;
+      const homeSectionTop = homeSectionRef.current.offsetTop;
+      const workSectionTop = workSectionRef.current.offsetTop;
       const parentTop = ref.current.scrollTop;
-      setPosition({ sectionTop, parentTop });
+      if(homeSectionTop === parentTop){
+        setCurrentSection("home")
+      }
+      if(workSectionTop === parentTop){
+        setCurrentSection("work")
+      }
     }
-
     ref.current.addEventListener("scroll", onScroll);
     return () => ref.current.removeEventListener("scroll", onScroll);
   }, [ref.current])
-
-  if(position){
-    if(position.sectionTop === position.parentTop){
-      console.log("In portfolio section")
-    }
-  }
   
 
   return (
     <div className="w-screen min-h-[600px] h-screen  bg-primary flex flex-row-reverse">
       <header className="w-fit border-l-[0.5px] border-slate-gray pb-[2.625rem] pt-5">
         <nav className="w-full h-full flex justify-center">
-          <Nav />
+          <Nav currentSection={currentSection} />
         </nav>
       </header>
       <main className="h-full flex-1 grid auto-rows-[100%] overflow-y-auto snap-y snap-mandatory hide-scrollbar" ref={ref}>
@@ -57,8 +57,8 @@ const App = () => {
             width={width}
           />
         </div>
-        <Hero />
-        <Work observer={sectionRef} />
+        <Hero observer={homeSectionRef}/>
+        <Work observer={workSectionRef} />
       </main>
     </div>
   )

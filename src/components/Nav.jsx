@@ -1,5 +1,11 @@
 
-const Nav = () => {
+// eslint-disable-next-line react/prop-types
+const Nav = ({currentSection}) => {
+  const sections = {
+    "home": "",
+    "work": "PORTFOLIO",
+    "about": "ABOUT"
+  }
   return (
     <div className='flex flex-col bg-primary z-10'>
       <div className='nav-items flex flex-col gap-8 relative left-[-0.0313rem]'>
@@ -23,7 +29,9 @@ const Nav = () => {
         </div>
       </div>
       <div className="w-full h-fit my-auto">
-        <h3 className="vertical-text mx-auto text-large font-light tracking-[0.2rem]">PORTFOLIO</h3>
+        <h3 className="vertical-text mx-auto text-large font-light tracking-[0.2rem]">
+          {sections[currentSection]}
+        </h3>
       </div>
       <div className='social-items flex flex-col items-center gap-8 mt-auto mb-16'>
         {/* Github */}
