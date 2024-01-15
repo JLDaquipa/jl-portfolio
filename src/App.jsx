@@ -49,7 +49,7 @@ const App = () => {
       </header>
       <main className="h-full flex-1 grid auto-rows-[100%] overflow-y-auto snap-y snap-mandatory hide-scrollbar" ref={ref}>
         {/* animated background */}
-        <div className='flex items-center h-full w-full overflow-hidden absolute'>
+        <div className={`flex items-center h-full w-full overflow-hidden absolute ${currentSection != "home" ? "opacity-30": "opacity-100"} transition-opacity ease-linear`}>
           <Lottie 
             options={defaultOptions}
             isClickToPauseDisabled={true}
