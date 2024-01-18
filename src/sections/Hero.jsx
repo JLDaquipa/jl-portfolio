@@ -1,11 +1,32 @@
 import Button from '../components/Button';
 import { motion } from "framer-motion";
+import Lottie from 'react-lottie';
+import animationData from '../assets/lotties/curveline-animation-1.json';
 
 // eslint-disable-next-line react/prop-types
 const Hero = ({observer}) => {
+  
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
-    <section className="section relative h-full w-full flex p-[2.625rem] z-10" id='hero' ref={observer}>
-        <div className='self-end z-20'>
+    <section className="section relative h-full w-full flex z-10" id='hero' ref={observer}>
+        {/* animated background */}
+        <div className={`flex items-center h-full w-full overflow-hidden absolute`}>
+          <Lottie 
+            options={defaultOptions}
+            isClickToPauseDisabled={true}
+            height={400}
+            width={1400}
+          />
+        </div>
+        <div className='self-end z-20 mb-12 ml-12'>
           <div className='flex gap-4 mb-3'>
             <Button className='hover:translate-y-[-2px] transition ease-in-out' type="fill" onClick={()=>{}}>
               VIEW MY WORK

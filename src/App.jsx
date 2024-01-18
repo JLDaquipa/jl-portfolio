@@ -1,8 +1,6 @@
 import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
 import Work from "./sections/Work";
-import Lottie from 'react-lottie';
-import animationData from './assets/lotties/curveline-animation-1.json';
 import useWindowDimensions from './utilities/UseWindowDimensions';
 import { useEffect, useRef, useState } from "react";
 
@@ -13,15 +11,6 @@ const App = () => {
   const ref = useRef();
   const homeSectionRef = useRef();
   const workSectionRef = useRef();
-  
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
 
   useEffect(() => {
     function onScroll() {
@@ -41,24 +30,15 @@ const App = () => {
   
 
   return (
-    <div className="w-screen min-h-[600px] h-screen  bg-primary flex flex-row-reverse">
-      <header className="w-fit border-l-[0.5px] border-slate-gray pb-[2.625rem] pt-5">
+    <div className="w-screen min-h-[600px] h-svh  bg-primary flex">
+      <header className="w-fit border-r-[0.5px] border-slate-gray pb-[2.625rem] pt-5">
         <nav className="w-full h-full flex justify-center">
           <Nav currentSection={currentSection} />
         </nav>
       </header>
-      <main className="h-full flex-1 grid auto-rows-[100%] overflow-y-auto snap-y snap-mandatory hide-scrollbar" ref={ref}>
-        {/* animated background */}
-        <div className={`flex items-center h-full w-full overflow-hidden absolute ${currentSection != "home" ? "opacity-30": "opacity-100"} transition-opacity ease-linear`}>
-          <Lottie 
-            options={defaultOptions}
-            isClickToPauseDisabled={true}
-            height={400}
-            width={width}
-          />
-        </div>
+      <main className="h-full flex-1 overflow-y-auto hide-scrollbar" ref={ref}>
         <Hero observer={homeSectionRef}/>
-        <Work observer={workSectionRef} />
+        {/* <Work observer={workSectionRef} /> */}
       </main>
     </div>
   )

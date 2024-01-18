@@ -55,7 +55,7 @@ img {
   }
 
   .section {
-    @apply h-full w-full overflow-hidden snap-start snap-always;
+    @apply h-full w-full overflow-hidden;
   }
 
   .work-card {
