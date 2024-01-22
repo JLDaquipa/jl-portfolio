@@ -49,9 +49,30 @@ img {
   height: auto;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #171A1B;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5E5C58;
+  border-radius: .1875rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @layer components {
   .nav-item {
-    @apply py-5 px-[1.6875rem] border-l-[.0313rem] border-slate-gray border-opacity-0 cursor-pointer;
+    @apply py-5 px-[1.6875rem] border-r-[.0313rem] border-slate-gray border-opacity-0 cursor-pointer;
   }
 
   .section {

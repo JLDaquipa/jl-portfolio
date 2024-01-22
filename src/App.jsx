@@ -1,11 +1,10 @@
 import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
 import Work from "./sections/Work";
-import useWindowDimensions from './utilities/UseWindowDimensions';
 import { useEffect, useRef, useState } from "react";
 
 const App = () => {
-  const { width } = useWindowDimensions();
+  
 
   const [currentSection, setCurrentSection] = useState("home");
   const ref = useRef();
@@ -30,15 +29,15 @@ const App = () => {
   
 
   return (
-    <div className="w-screen min-h-[600px] h-svh  bg-primary flex">
+    <div className="w-screen min-h-[600px] h-svh bg-primary flex">
       <header className="w-fit border-r-[0.5px] border-slate-gray pb-[2.625rem] pt-5">
         <nav className="w-full h-full flex justify-center">
           <Nav currentSection={currentSection} />
         </nav>
       </header>
-      <main className="h-full flex-1 overflow-y-auto hide-scrollbar" ref={ref}>
+      <main className="h-full flex-1 overflow-y-auto" ref={ref}>
         <Hero observer={homeSectionRef}/>
-        {/* <Work observer={workSectionRef} /> */}
+        <Work observer={workSectionRef} />
       </main>
     </div>
   )

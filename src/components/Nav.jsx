@@ -8,7 +8,7 @@ const Nav = ({currentSection}) => {
   }
   return (
     <div className='flex flex-col bg-primary z-10'>
-      <div className='nav-items flex flex-col gap-8 relative left-[-0.0313rem]'>
+      <div className='nav-items flex flex-col gap-8 relative right-[-0.0313rem]'>
         {/* Home Nav */}
         <a href="#hero" className='nav-item border-primary-yellow'>
           <svg className="stroke-primary-yellow" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
