@@ -5,7 +5,7 @@ import nikeNewArrivalThumbnail from "../assets/works/nike-new-arrivals-showcase.
 const Work = ({observer}) => {
   
   return (
-    <section className="section relative flex h-full w-full p-[2.625rem] z-10" id='hero' ref={observer}>
+    <section className="section relative flex h-full w-full px-[2.625rem] z-10" id='hero' ref={observer}>
         <div className="flex absolute left-0 right-0 mt-10 mx-auto w-fit gap-4 text-base font-light transition-all ease-in-out">
           <span className="cursor-pointer text-primary-yellow scale-105">Web Development</span>
           <div className=" bg-slate-gray w-[1px]"></div>

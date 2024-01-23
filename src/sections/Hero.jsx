@@ -19,16 +19,17 @@ const Hero = ({observer}) => {
   };
 
   return (
-    <section className="section relative h-full w-full flex z-10 justify-center items-center" id='hero' ref={observer}>
-        <div className='z-20 mx-12 text-center'>
+    <section className="section relative h-full w-full flex" id='hero' ref={observer}>
+        <div className='w-[60%] z-20 flex flex-col justify-center items-start px-24'>
+          <span className='font-squarepeg text-[3rem] leading-none  text-primary-yellow'>Hello, I'm</span>
           <motion.h1 
-            className='text-[4rem] font-bold tracking-[0.12rem] leading-tight'
+            className='text-[3rem] font-bold tracking-[0.12rem] my-3 leading-none'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            JAY LLOYD DAQUIPA
+           JAY LLOYD DAQUIPA
           </motion.h1>
-          <p className='font-light text-xl mb-5'>A Front-end web developer based in the Philippines</p>
+          <p className='font-light mb-6'>A Front-end web developer based in the Philippines. Eager to collaborate with you on your web projects and bring your ideas to life.</p>
           <div className='flex gap-6 justify-center'>
             <Button className='hover:translate-y-[-2px] transition ease-in-out' type="fill" onClick={()=>{}}>
               VIEW MY WORK
@@ -39,13 +40,8 @@ const Hero = ({observer}) => {
           </div>
         </div>
         {/* animated background */}
-        <div className={`flex items-end h-full w-full overflow-hidden absolute z-10`}>
-          <Lottie 
-            options={defaultOptions}
-            isClickToPauseDisabled={true}
-            height={300}
-            width={width}
-          />
+        <div className={`w-[40%] relative overflow-hidden flex z-10`}>
+              
         </div>
     </section>
   )

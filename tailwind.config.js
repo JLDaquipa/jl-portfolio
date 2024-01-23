@@ -27,6 +27,7 @@ export default {
     extend: {
       fontFamily: {
         oxanium: ['Oxanium', 'sans-serif'],
+        squarepeg: ['Square Peg', 'sans-serif'],
       },
       colors: {
         'primary': "#171A1B",

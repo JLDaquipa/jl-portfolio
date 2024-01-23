@@ -4,7 +4,6 @@ import Work from "./sections/Work";
 import { useEffect, useRef, useState } from "react";
 
 const App = () => {
-  
 
   const [currentSection, setCurrentSection] = useState("home");
   const ref = useRef();
