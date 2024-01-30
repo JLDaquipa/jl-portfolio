@@ -16,6 +16,7 @@ button,
 input,
 textarea {
   font-family: "Montserrat", sans-serif;
+  color: #6B6B6B;
 }
 
 body {
@@ -27,6 +28,7 @@ h2,
 h3 {
   color: #6B6B6B;
   font-weight: 600;
+  letter-spacing: 0.56px;
 }
 
 ul {
@@ -49,18 +51,33 @@ img {
 }
 
 @layer components {
-  /* .max-container {
+  .max-container {
     max-width: 1440px;
     margin: 0 auto;
   }
 
-  .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
-  } */
+  .section {
+    @apply w-full h-fit;
+  }
 
+  .highlight {
+    @apply text-white text-nowrap;
+  }
+
+  .bento-box {
+    @apply p-7 flex border-[.0187rem] border-opacity-80 rounded-[1.25rem] border-outline-gray bg-light-black smooth-transition hover:scale-[1.01];
+  }
+
+  .box-row {
+    @apply flex flex-col gap-3;
+  }
 }
 
 @layer utilities {
+  .smooth-transition{
+    @apply transition-all ease-in-out;
+  }
+
   /* .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }

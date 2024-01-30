@@ -20,10 +20,11 @@ export default {
       },
       colors: {
         'primary-black': "#0D0F0F",
-        'light-black': "#0D0F0F",
+        'light-black': "#161818",
         "primary-orange": "#EFAC6D",
         "red-orange": "#FF856A",
         "primary-gray": "#323639",
+        "outline-gray": "#3F3F3F",
         "slate-gray": "#6B6B6B",
       },
       screens: {
