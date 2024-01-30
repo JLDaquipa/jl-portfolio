@@ -10,8 +10,8 @@ const Hero = () => {
           <div className='profile rounded-full overflow-hidden w-[3.75rem] h-[3.75rem]'>
             <img src={jlPhoto} alt="" className='object-cover'/>
           </div>
-          <h1 className='w-full text-3xl font-bold leading-tight xl:text-[2.5rem] max-w-[615px]'>
-            Hello, I’m <span className="highlight"> Jay Lloyd</span>, a <span className="highlight">Front-end</span> Web Developer based in the <span className="highlight"> Philippines</span>
+          <h1 className='w-full text-3xl font-bold leading-tight max-w-[480px]'>
+            Hello, I’m <span className="highlight"> Jay Lloyd</span>, a <span className="highlight ">Front-end</span> Web Developer based in the <span className="highlight"> Philippines</span>
           </h1>
           <a 
             href="#"
@@ -24,7 +24,7 @@ const Hero = () => {
           </a>
         </div>
         <div className='bento-box flex-col justify-end gap-7 pt-[5rem] md:max-w-[410px]'>
-          <p className='font-semibold text-xl xl:text-3xl'>Driven by a <span className='highlight text-wrap'> deep passion</span> for creating web solutions.</p>
+          <p className='font-semibold text-xl'>Driven by a <span className='highlight text-wrap'> deep passion</span> for creating web solutions.</p>
           <a 
             href="#"
             className='text-slate-gray font-semibold text-lg flex items-center gap-4 w-fit leading-none'
@@ -81,10 +81,10 @@ const Hero = () => {
             <div className='w-full flex flex-1 justify-center items-center py-4'>
               <img src={stars} width={160} height={160}/>
             </div>
-            <h3 className='text-center text-[2rem] xl:text-[2.5rem] leading-none'>
+            <h3 className='text-center text-[2rem] leading-none'>
               My <span className='highlight'> Goal</span>
             </h3>
-            <p className='text-center font-semibold xl:text-xl'>
+            <p className='text-center font-semibold'>
               Become an effective developer that able to deliver quality works and solutions in the tech industry
             </p>
           </div>
