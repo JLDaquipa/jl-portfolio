@@ -5,12 +5,12 @@ const Hero = () => {
 
   return (
     <div className="section flex gap-3 flex-col">
-      <div className='box-row'>
-        <div className="bento-box flex-col gap-7">
+      <div className='box-row md:flex-row'>
+        <div className="bento-box flex-col flex-1 gap-7 md:min-w-[465px]">
           <div className='profile rounded-full overflow-hidden w-[3.75rem] h-[3.75rem]'>
             <img src={jlPhoto} alt="" className='object-cover'/>
           </div>
-          <h1 className='w-full text-3xl font-bold leading-tight'>
+          <h1 className='w-full text-3xl font-bold leading-tight xl:text-[2.5rem] max-w-[615px]'>
             Hello, I’m <span className="highlight"> Jay Lloyd</span>, a <span className="highlight">Front-end</span> Web Developer based in the <span className="highlight"> Philippines</span>
           </h1>
           <a 
@@ -23,8 +23,8 @@ const Hero = () => {
             </svg>
           </a>
         </div>
-        <div className='bento-box flex-col gap-7 pt-[5rem]'>
-          <p className='font-semibold text-xl'>Driven by a <span className='highlight'> deep passion</span> for creating web solutions.</p>
+        <div className='bento-box flex-col justify-end gap-7 pt-[5rem] md:max-w-[410px]'>
+          <p className='font-semibold text-xl xl:text-3xl'>Driven by a <span className='highlight text-wrap'> deep passion</span> for creating web solutions.</p>
           <a 
             href="#"
             className='text-slate-gray font-semibold text-lg flex items-center gap-4 w-fit leading-none'
@@ -36,8 +36,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className='box-row'>
-        <div className='box-col flex flex-col gap-3'>
+      <div className='box-row md:flex-row'>
+        <div className='box-col flex flex-col md:w-1/2 gap-3'>
           {/* Socials Links */}
           <div className='bento-box'>
             <div className='social flex flex-1 justify-center'>
@@ -76,15 +76,15 @@ const Hero = () => {
           </a>
           </div>
         </div>
-        <div className='box-col'>
-          <div className='bento-box flex-col gap-7'>
-            <div className='w-full flex justify-center items-center py-4'>
+        <div className='box-col flex md:w-1/2'>
+          <div className='bento-box flex-col gap-7 justify-end'>
+            <div className='w-full flex flex-1 justify-center items-center py-4'>
               <img src={stars} width={160} height={160}/>
             </div>
-            <h3 className='text-center text-[2rem] leading-none'>
+            <h3 className='text-center text-[2rem] xl:text-[2.5rem] leading-none'>
               My <span className='highlight'> Goal</span>
             </h3>
-            <p className='text-center font-semibold'>
+            <p className='text-center font-semibold xl:text-xl'>
               Become an effective developer that able to deliver quality works and solutions in the tech industry
             </p>
           </div>

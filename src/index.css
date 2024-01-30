@@ -60,6 +60,10 @@ img {
     @apply w-full h-fit;
   }
 
+  .nav-item {
+    @apply text-xl leading-none text-white font-semibold cursor-pointer;
+  }
+
   .highlight {
     @apply text-white text-nowrap;
   }
@@ -76,6 +80,10 @@ img {
 @layer utilities {
   .smooth-transition{
     @apply transition-all ease-in-out;
+  }
+
+  .linear-bg {
+    background: linear-gradient(90deg, #FF856A 0%, #EFAC6D 100%);
   }
 
   /* .padding {
