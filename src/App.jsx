@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import Hero from './sections/Hero';
 import About from './sections/About';
+import Skills from './sections/Skills/Skills';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main className='max-container px-6 lg:px-20 mb-6 flex flex-col gap-24 lg:gap-32'>
         <Hero />
         <About />
+        <Skills />
       </main>
     </>
   )
