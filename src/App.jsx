@@ -2,6 +2,7 @@ import Nav from './components/Nav';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills/Skills';
+import Experiences from './sections/Experiences';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Experiences />
       </main>
     </>
   )
