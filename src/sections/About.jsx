@@ -4,12 +4,12 @@ const About = () => {
   return (
     <section className="section">
       <div className="box-row md:flex-row-reverse">
-        <div className="box-col flex-col w-full md:w-[1200px]">
-          <div className="flex gap-3">
+        <div className="box-col flex-col w-full md:w-[275px] lg:w-[330px]">
+          <div className="flex gap-3 md:flex-col">
             <div className="bento-box overflow-hidden p-0 flex-1">
               <img className='w-full object-cover' src={jlPhoto} alt="JL Photo" />
             </div>
-            <div className="bento-box flex-col justify-center items-center gap-9 min-w-[145px]">
+            <div className="bento-box flex-col md:flex-row justify-center items-center gap-9">
               <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path d="M34 17L25.9861 25.0139L23.9826 23.0103L29.9931 17L23.9826 10.9896L25.9861 8.98613L34 17ZM4.00694 17L10.0173 23.0103L8.01387 25.0139L0 17L8.01387 8.98613L10.0173 10.9896L4.00694 17ZM13.867 29.75H10.8518L20.1331 4.25H23.1482L13.867 29.75Z" fill="#EFAC6D"/>
               </svg>
@@ -43,17 +43,17 @@ const About = () => {
           </div>
         </div>
 
-        <div className='box-col'>
-          <div className='bento-box'>
+        <div className='box-col flex-1'>
+          <div className='bento-box flex-1 justify-center items-center'>
             <div>
               <h2 className='text-[2rem] leading-none mb-8'>
                 About <span className='highlight'> Me</span>
               </h2>
-              <p className='font-semibold'>
+              <p className='font-semibold lg:max-w-[550px]'>
                 I started my commitment on becoming a web developer back when I decided to take an online course on <a className="text-link" href="#">Scrimba</a>. That time I found myself enjoying building web applications and learning new technologies in which sparks my passion greatly in web development.
               </p>
               <br />
-              <p className='font-semibold'>
+              <p className='font-semibold lg:max-w-[550px]'>
                 I’m currently helping out in our family business but while I’m at it, I continue in spending days and nights improving my skills and knowledge. Building small to big projects to test and hone new technologies I learned. You can check my git repositories at <a className="text-link" href="#">Github</a> to see what projects I’m working on.
               </p>
             </div>
