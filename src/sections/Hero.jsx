@@ -4,7 +4,7 @@ import stars from '../assets/stars.svg';
 const Hero = () => {
 
   return (
-    <div className="section flex gap-3 flex-col">
+    <section className="section">
       <div className='box-row md:flex-row'>
         <div className="bento-box flex-col flex-1 gap-7 md:min-w-[465px]">
           <div className='profile rounded-full overflow-hidden w-[3.75rem] h-[3.75rem]'>
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
       </div>
       <div className='box-row md:flex-row'>
-        <div className='box-col flex flex-col md:w-1/2 gap-3'>
+        <div className='box-col flex-col md:w-1/2'>
           {/* Socials Links */}
           <div className='bento-box'>
             <div className='social flex flex-1 justify-center'>
@@ -76,7 +76,7 @@ const Hero = () => {
           </a>
           </div>
         </div>
-        <div className='box-col flex md:w-1/2'>
+        <div className='box-col md:w-1/2'>
           <div className='bento-box flex-col gap-7 justify-end'>
             <div className='w-full flex flex-1 justify-center items-center py-4'>
               <img src={stars} width={160} height={160}/>
@@ -90,7 +90,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

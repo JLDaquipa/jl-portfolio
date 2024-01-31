@@ -1,5 +1,6 @@
 import Nav from './components/Nav';
 import Hero from './sections/Hero';
+import About from './sections/About';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </header>
       <main className='max-container px-6 lg:px-20 mb-6 flex flex-col gap-24'>
         <Hero />
+        <About />
       </main>
     </>
   )

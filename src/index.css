@@ -57,7 +57,7 @@ img {
   }
 
   .section {
-    @apply w-full h-fit;
+    @apply w-full h-fit flex gap-3 flex-col;
   }
 
   .nav-item {
@@ -75,6 +75,10 @@ img {
   .box-row {
     @apply flex flex-col gap-3;
   }
+
+  .box-col {
+    @apply flex gap-3;
+  }
 }
 
 @layer utilities {
@@ -84,6 +88,10 @@ img {
 
   .linear-bg {
     background: linear-gradient(90deg, #FF856A 0%, #EFAC6D 100%);
+  }
+
+  .text-link {
+    @apply text-primary-orange border-b border-primary-orange
   }
 
   /* .padding {
