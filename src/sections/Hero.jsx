@@ -10,7 +10,7 @@ const Hero = () => {
           <div className='profile rounded-full overflow-hidden w-[3.75rem] h-[3.75rem]'>
             <img src={jlPhoto} alt="" className='object-cover'/>
           </div>
-          <h1 className='w-full text-3xl font-bold leading-tight max-w-[480px]'>
+          <h1 className='w-full text-3xl lg:text-[2.5rem] font-bold leading-tight max-w-[600px]'>
             Hello, I’m <span className="highlight"> Jay Lloyd</span>, a <span className="highlight ">Front-end</span> Web Developer based in the <span className="highlight"> Philippines</span>
           </h1>
           <a 

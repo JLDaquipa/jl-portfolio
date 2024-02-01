@@ -4,10 +4,10 @@ const About = () => {
   return (
     <section className="section">
       <div className="box-row md:flex-row-reverse">
-        <div className="box-col flex-col w-full md:w-[275px] lg:w-[330px]">
+        <div className="box-col flex-col w-full md:w-[275px] lg:w-[380px]">
           <div className="flex gap-3 md:flex-col">
             <div className="bento-box overflow-hidden p-0 flex-1">
-              <img className='w-full object-cover' src={jlPhoto} alt="JL Photo" />
+              <img className='w-full h-[400px] object-cover' src={jlPhoto} alt="JL Photo" />
             </div>
             <div className="bento-box flex-col md:flex-row justify-center items-center gap-9">
               <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
