@@ -45,11 +45,6 @@ button {
   outline: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 @layer components {
   .max-container {
     max-width: 1440px;
