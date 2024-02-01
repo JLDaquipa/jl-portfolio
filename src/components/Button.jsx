@@ -2,7 +2,7 @@
 
 const Button = ({children, className}) => {
   return (
-    <button className={`linear-bg py-3 px-4 font-semibold text-black rounded-xl ${className}`}>
+    <button className={`w-fit linear-bg py-3 px-4 font-semibold text-black rounded-xl ${className}`}>
       {children}
     </button>
   )
