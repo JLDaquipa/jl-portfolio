@@ -24,7 +24,7 @@ const Works = () => {
       }
     },
     {
-      workId: "2",
+      workId: "3",
       title: "Nike New Arrival",
       thumbnail: nikeNewArrival_thumbnail,
       links:{

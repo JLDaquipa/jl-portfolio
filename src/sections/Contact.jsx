@@ -53,22 +53,22 @@ const Contact = () => {
           </div>
         </div>
         <div className='box-col flex-1 flex-col'>
-          <div className='bento-box flex-col gap-[3.125rem]'>
+          <div className='bento-box flex-col gap-[3.125rem] h-full'>
             <h5 className='text-white text-2xl font-semibold'>
               Write me your project
             </h5>
             <form className='flex flex-col gap-[3.125rem]' onSubmit={handleSubmit}>
-              <div className='relative border border-slate-gray rounded-xl p-6'>
+              <div className='relative border border-slate-gray rounded-xl'>
                 <label className='text-lg text-primary-orange bg-light-black font-semibold absolute top-[-0.75rem] left-4 px-2' htmlFor="name">Name</label>
-                <input className='w-full text-xl text-slate-gray font-medium bg-transparent outline-none placeholder:text-slate-gray' type="text" name='name' placeholder='Insert your name' />
+                <input className='w-full h-full p-6 text-xl text-white font-medium bg-transparent outline-none placeholder:text-slate-gray' type="text" id='name' placeholder='Insert your name' required/>
               </div>
-              <div className='relative border border-slate-gray rounded-xl p-6'>
+              <div className='relative border border-slate-gray rounded-xl'>
                 <label className='text-lg text-primary-orange bg-light-black font-semibold absolute top-[-0.75rem] left-4 px-2' htmlFor="email">Email</label>
-                <input className='w-full text-xl text-slate-gray font-medium bg-transparent outline-none placeholder:text-slate-gray' type="text" name='email' placeholder='Insert your email' />
+                <input className='w-full h-full p-6  text-xl text-white font-medium bg-transparent outline-none placeholder:text-slate-gray' type="email" id='email' placeholder='Insert your email' required/>
               </div>
-              <div className='relative border border-slate-gray rounded-xl p-6'>
+              <div className='relative border border-slate-gray rounded-xl'>
                 <label className='text-lg text-primary-orange bg-light-black font-semibold absolute top-[-0.75rem] left-4 px-2' htmlFor="project">Project</label>
-                <textarea className='w-full text-xl text-slate-gray font-medium bg-transparent outline-none placeholder:text-slate-gray resize-none min-h-[9.375rem]' type="text" name='project' placeholder='Write your project'/>
+                <textarea className='w-full h-full p-6 text-xl text-white font-medium bg-transparent outline-none placeholder:text-slate-gray resize-none min-h-[9.375rem]' type="text" id='project' placeholder='Write your project' required/>
               </div>
               <Button className="flex gap-2">
                 Send Message <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,9 +80,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
-      <div className='box-row'>
-
       </div>
     </section>
   )

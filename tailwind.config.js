@@ -28,6 +28,7 @@ export default {
         "slate-gray": "#6B6B6B",
       },
       screens: {
+        "s1250":"1250px",
         "wide": "1440px"
       }
     },

@@ -5,6 +5,7 @@ import Skills from './sections/Skills/Skills';
 import Experiences from './sections/Experiences';
 import Works from './sections/Works/Works';
 import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
         <Skills />
         <Experiences />
         <Works />
-        <Contact />
+        <div className='flex gap-3 max-s1250:flex-col'>
+          <Contact />
+          <Footer />
+        </div>
       </main>
     </>
   )

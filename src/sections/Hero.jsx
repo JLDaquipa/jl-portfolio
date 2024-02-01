@@ -7,8 +7,8 @@ const Hero = () => {
     <section className="section">
       <div className='box-row md:flex-row'>
         <div className="bento-box flex-col flex-1 gap-7 md:min-w-[465px]">
-          <div className='profile rounded-full overflow-hidden w-[3.75rem] h-[3.75rem]'>
-            <img src={jlPhoto} alt="" className='object-cover'/>
+          <div className='profile rounded-full overflow-hidden w-[5rem] h-[5rem]'>
+            <img src={jlPhoto} alt="" className='w-full object-cover'/>
           </div>
           <h1 className='w-full text-3xl lg:text-[2.5rem] font-bold leading-tight max-w-[600px]'>
             Hello, I’m <span className="highlight"> Jay Lloyd</span>, a <span className="highlight ">Front-end</span> Web Developer based in the <span className="highlight"> Philippines</span>
