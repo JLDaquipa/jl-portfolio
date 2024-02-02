@@ -74,6 +74,10 @@ button {
   .box-col {
     @apply flex gap-3;
   }
+
+  .image-hover {
+    @apply absolute w-full h-full bg-gradient-to-t from-black opacity-0 hover:opacity-70 transition-all ease-in-out duration-500 flex items-end p-7;
+  }
 }
 
 @layer utilities {

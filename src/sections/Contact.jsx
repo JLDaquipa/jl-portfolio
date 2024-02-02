@@ -41,11 +41,11 @@ const Contact = () => {
         <div className='box-col flex-col'>
           {/* Email */}
           <div className='bento-box flex-col pt-20'>
-            <span className='text-2xl font-semibold text-primary-orange mb-4'>Email</span>
-            <span className='text-xl font-semibold mb-7'>daquipajaylloyd95@gmail.com</span>
+            <span className='text-xl font-semibold text-primary-orange mb-3'>Email</span>
+            <span className='text-lg font-semibold mb-5'>daquipajaylloyd95@gmail.com</span>
             <a 
-              href="#"
-              className='text-slate-gray font-semibold text-lg flex items-center gap-4 w-fit leading-none'
+              href="mailto:daquipajaylloyd95@gmail.com"
+              className='text-slate-gray font-semibold text-base flex items-center gap-3 w-fit leading-none'
             >
               Write Me
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -55,38 +55,38 @@ const Contact = () => {
           </div>
           {/* Phone */}
           <div className='bento-box flex-col justify-end pt-20 lg:h-full'>
-            <span className='text-2xl font-semibold text-primary-orange mb-4'>Phone</span>
-            <span className='text-xl font-semibold'>+63 995 965 9169</span>
+            <span className='text-xl font-semibold text-primary-orange mb-3'>Phone</span>
+            <span className='text-lg font-semibold'>+63 995 965 9169</span>
           </div>
           {/* Email */}
           <div className='bento-box flex-col pt-20'>
-            <span className='text-2xl font-semibold text-primary-orange mb-4'>Messenger</span>
-            <span className='text-xl font-semibold mb-7'>jaylloyd.daquipa</span>
+            <span className='text-xl font-semibold text-primary-orange mb-3'>Messenger</span>
+            <span className='text-lg font-semibold mb-5'>jaylloyd.daquipa</span>
             <a 
-              href="#"
-              className='text-slate-gray font-semibold text-lg flex items-center gap-4 w-fit leading-none'
+              href="https://m.me/jaylloyd.daquipa"
+              className='text-slate-gray font-semibold text-base flex items-center gap-3 w-fit leading-none'
             >
               Write Me
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <path d="M11.75 7L18 13M18 13L11.75 19M18 13H3" stroke="#666666" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
           </div>
         </div>
         <div className='box-col flex-1 flex-col'>
-          <div className='bento-box flex-col gap-[3.125rem] h-full'>
-            <h5 className='text-white text-2xl font-semibold'>
+          <div className='bento-box flex-col gap-10 h-full'>
+            <h5 className='text-white text-xl font-semibold'>
               Write me your project
             </h5>
             <form 
-              className='flex flex-col gap-[3.125rem]' 
+              className='flex flex-col gap-10' 
               ref={form} 
               onSubmit={sendEmail}
             >
-              <div className='relative border border-slate-gray rounded-xl'>
-                <label className='text-lg text-primary-orange bg-light-black font-semibold absolute top-[-0.75rem] left-4 px-2' htmlFor="name">Name</label>
+              <div className='relative '>
+                <label className='text-primary-orange bg-light-black font-medium absolute top-[-0.75rem] left-4 px-2' htmlFor="name">Name</label>
                 <input 
-                  className='w-full h-full p-6 text-xl text-white font-medium bg-transparent outline-none placeholder:text-slate-gray' 
+                  className='w-full h-full px-6 py-5 text-lg text-white font-medium bg-transparent border border-slate-gray rounded-xl outline-none placeholder:text-slate-gray' 
                   type="text" 
                   id='name'
                   name="name"
@@ -94,10 +94,10 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div className='relative border border-slate-gray rounded-xl'>
-                <label className='text-lg text-primary-orange bg-light-black font-semibold absolute top-[-0.75rem] left-4 px-2' htmlFor="email">Email</label>
+              <div className='relative'>
+                <label className='text-primary-orange bg-light-black font-medium absolute top-[-0.75rem] left-4 px-2' htmlFor="email">Email</label>
                 <input 
-                  className='w-full h-full p-6  text-xl text-white font-medium bg-transparent outline-none placeholder:text-slate-gray' 
+                  className='w-full h-full px-6 py-5 text-lg text-white font-medium bg-transparent border border-slate-gray rounded-xl outline-none placeholder:text-slate-gray' 
                   type="email" 
                   id='email'
                   name="email" 
@@ -105,10 +105,10 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div className='relative border border-slate-gray rounded-xl'>
-                <label className='text-lg text-primary-orange bg-light-black font-semibold absolute top-[-0.75rem] left-4 px-2' htmlFor="project">Project</label>
+              <div className='relative'>
+                <label className='text-primary-orange bg-light-black font-medium absolute top-[-0.75rem] left-4 px-2' htmlFor="project">Project</label>
                 <textarea 
-                  className='w-full h-full p-6 text-xl text-white font-medium bg-transparent outline-none placeholder:text-slate-gray resize-none min-h-[9.375rem]'
+                  className='w-full h-full px-6 py-5 text-lg text-white font-medium bg-transparent border border-slate-gray rounded-xl outline-none placeholder:text-slate-gray resize-none min-h-[9.375rem]'
                   id='project'
                   name="project" 
                   placeholder='Write your project' 

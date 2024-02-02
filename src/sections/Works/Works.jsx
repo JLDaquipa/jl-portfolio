@@ -40,7 +40,7 @@ const Works = () => {
 
         <div className='bento-box flex-col gap-7 justify-end'>
           <div className='w-full flex flex-1 justify-center items-center py-6'>
-            <img src={panels} />
+            <img src={panels} width={300}/>
           </div>
           <h3 className='text-center text-[2rem] leading-none'>
             My <span className='highlight'> Portfolio</span>

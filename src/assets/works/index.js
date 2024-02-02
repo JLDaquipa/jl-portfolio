@@ -1,5 +1,5 @@
-import jobHuntly_thumbnail from './jobhuntly-showcase.png';
-import nikeNewArrival_thumbnail from './nike-new-arrivals-showcase.png';
+import jobHuntly_thumbnail from './jobhuntly-thumbnail.png';
+import nikeNewArrival_thumbnail from './nike-new-arrivals-thumbnail.png';
 
 export {
   jobHuntly_thumbnail,
