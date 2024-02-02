@@ -11,13 +11,19 @@ const Nav = () => {
         <tbody>
         <tr className='h-full flex items-center gap-9'>
           <td className='nav-item'>
-            Home
+          <a href="#about">
+              About
+            </a>
           </td>
           <td className='nav-item'>
-            About
+            <a href="#works">
+              Works
+            </a>
           </td>
           <td className='nav-item'>
-            Work
+            <a href="#contact">
+              Contact
+            </a>
           </td>
         </tr>
         </tbody>

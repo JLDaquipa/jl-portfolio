@@ -35,7 +35,7 @@ const Works = () => {
   ]
 
   return (
-    <section className="section">
+    <section id='works' className="section">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
 
         <div className='bento-box flex-col gap-7 justify-end'>

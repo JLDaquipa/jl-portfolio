@@ -2,7 +2,7 @@ import jlPhoto from '../assets/profile-pic.jpg'
 
 const About = () => {
   return (
-    <section className="section">
+    <section id='about' className="section">
       <div className="box-row md:flex-row-reverse">
         <div className="box-col flex-col w-full md:w-[275px] lg:w-[380px]">
           <div className="flex gap-3 md:flex-col">
@@ -50,11 +50,11 @@ const About = () => {
                 About <span className='highlight'> Me</span>
               </h2>
               <p className='font-semibold lg:max-w-[550px]'>
-                I started my commitment on becoming a web developer back when I decided to take an online course on <a className="text-link" href="#">Scrimba</a>. That time I found myself enjoying building web applications and learning new technologies in which sparks my passion greatly in web development.
+                I started my commitment on becoming a web developer back when I decided to take an online course on <a className="text-link" href="https://scrimba.com/" target='_blank' rel="noreferrer">Scrimba</a>. That time I found myself enjoying building web applications and learning new technologies in which sparks my passion greatly in web development.
               </p>
               <br />
               <p className='font-semibold lg:max-w-[550px]'>
-                I’m currently helping out in our family business but while I’m at it, I continue in spending days and nights improving my skills and knowledge. Building small to big projects to test and hone new technologies I learned. You can check my git repositories at <a className="text-link" href="#">Github</a> to see what projects I’m working on.
+                I’m currently helping out in our family business but while I’m at it, I continue in spending days and nights improving my skills and knowledge. Building small to big projects to test and hone new technologies I learned. You can check my git repositories at <a className="text-link" href="https://github.com/JLDaquipa" target='_blank' rel="noreferrer">Github</a> to see what projects I’m working on.
               </p>
             </div>
           </div>

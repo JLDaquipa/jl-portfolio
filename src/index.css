@@ -64,7 +64,7 @@ button {
   }
 
   .bento-box {
-    @apply p-7 flex border-[.0187rem] border-opacity-80 rounded-[1.25rem] border-outline-gray bg-light-black smooth-transition hover:scale-[1.005];
+    @apply p-7 flex border-[.0187rem] border-opacity-80 rounded-[1.25rem] border-outline-gray bg-light-black smooth-transition hover:translate-y-[-2px];
   }
 
   .box-row {

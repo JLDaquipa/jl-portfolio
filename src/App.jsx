@@ -10,7 +10,7 @@ import Footer from './sections/Footer';
 function App() {
   return (
     <>
-      <header className='max-container px-6  pt-6 mb-6'>
+      <header className='max-container px-6 pt-6 mb-6'>
         <Nav />
       </header>
       <main className='max-container px-6  mb-6 flex flex-col gap-3'>
