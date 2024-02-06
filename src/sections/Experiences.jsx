@@ -24,7 +24,7 @@ const Experiences = () => {
             <div className='w-full flex flex-col gap-12 max-w-[650px]'>
               <div className='work-1 w-full'>
                 <span className='text-[0.6875rem] text-primary-orange inline-block mb-2'>June 2020 - June 2021</span>
-                <div className='flex mb-4 items-end gap-4'>
+                <div className='flex flex-wrap mb-4 items-end gap-4'>
                   <h5 className='font-semibold text-2xl text-white leading-none'>Programmer</h5>
                   <span className='text-xs font-medium text-slate-gray'>@ Osomnimedia Web Design Studio</span>
                 </div>
@@ -34,7 +34,7 @@ const Experiences = () => {
               </div>
               <div className='work-2 w-full'>
                 <span className='text-[0.6875rem] text-primary-orange inline-block mb-2'>June 2020 - June 2021</span>
-                <div className='flex mb-4 items-end gap-4'>
+                <div className='flex flex-wrap mb-4 items-end gap-4'>
                   <h5 className='font-semibold text-2xl text-white leading-none'>Intern Web App Developer</h5>
                   <span className='text-xs text-slate-gray'>@ Departmen Of Justice Davao City </span>
                 </div>

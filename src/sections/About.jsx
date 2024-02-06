@@ -18,7 +18,7 @@ const About = () => {
               </div>
               <img className='w-full h-[400px] object-cover' src={jlPhoto} alt="JL Photo" />
             </div>
-            <div className="bento-box flex-col md:flex-row justify-center items-center gap-9">
+            <div className="bento-box flex-col md:flex-row justify-evenly items-center gap-9">
               <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path d="M34 17L25.9861 25.0139L23.9826 23.0103L29.9931 17L23.9826 10.9896L25.9861 8.98613L34 17ZM4.00694 17L10.0173 23.0103L8.01387 25.0139L0 17L8.01387 8.98613L10.0173 10.9896L4.00694 17ZM13.867 29.75H10.8518L20.1331 4.25H23.1482L13.867 29.75Z" fill="#EFAC6D"/>
               </svg>

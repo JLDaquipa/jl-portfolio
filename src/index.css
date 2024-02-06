@@ -56,7 +56,7 @@ button {
   }
 
   .nav-item {
-    @apply text-xl leading-none text-white font-semibold cursor-pointer;
+    @apply text-lg leading-none text-white font-semibold cursor-pointer;
   }
 
   .highlight {

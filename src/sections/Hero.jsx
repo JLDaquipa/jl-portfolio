@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="section">
       <div className='box-row md:flex-row'>
-        <div className="bento-box flex-col flex-1 gap-7 md:min-w-[465px]">
+        <div className="bento-box group flex-col flex-1 gap-7 md:min-w-[465px]">
           <div className='profile rounded-full overflow-hidden w-[5rem] h-[5rem]'>
             <img src={jlPhoto} alt="" className='w-full object-cover'/>
           </div>
@@ -18,7 +18,7 @@ const Hero = () => {
             className='text-slate-gray font-semibold text-lg flex items-center gap-4 w-fit leading-none'
           >
             About Me
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <svg className='group-hover:translate-x-2 smooth-transition' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M11.75 7L18 13M18 13L11.75 19M18 13H3" stroke="#666666" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
