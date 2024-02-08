@@ -6,6 +6,7 @@ import Experiences from './sections/Experiences';
 import Works from './sections/Works/Works';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
+import Splitter from './components/Splitter';
 
 function App() {
   return (
@@ -13,16 +14,20 @@ function App() {
       <header className='max-container px-6 pt-6 mb-6'>
         <Nav />
       </header>
-      <main className='max-container px-6  mb-6 flex flex-col gap-3 '>
+      <main className='max-container px-6  mb-6 flex flex-col gap-20 '>
         <Hero />
+        <Splitter />
+        <div className='flex flex-col gap-3'>
         <About />
         <Skills />
         <Experiences />
-        <Works />
-        <div className='flex gap-3 max-s1250:flex-col'>
-          <Contact />
-          <Footer />
         </div>
+        <Splitter />
+        <Works />
+        <Splitter />
+        <Contact />
+        <Splitter />
+        <Footer />
       </main>
     </>
   )

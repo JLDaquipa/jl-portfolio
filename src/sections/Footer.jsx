@@ -2,7 +2,7 @@ import Button from "../components/Button"
 
 const Footer = () => {
   return (
-    <footer className="flex w-full s1250:w-2/5">
+    <footer className="flex w-full">
       <div className='bento-box w-full flex-col justify-center gap-10 '>
         <h3 className="text-center text-[2rem] text-white font-semibold">Jay Lloyd</h3>
         <div className='flex gap-8 justify-center'>

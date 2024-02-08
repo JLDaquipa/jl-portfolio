@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className='section'>
+    <section id="contact" className='section max-w-[1000px] mx-auto'>
       <div className='box-row'>
         <div className='bento-box'>
           <h3 className='w-full text-center text-[2rem] leading-none'>
@@ -37,7 +37,7 @@ const Contact = () => {
           </h3>
         </div>
       </div>
-      <div className='box-row lg:flex-row'>
+      <div className='box-row md:flex-row'>
         <div className='box-col flex-col'>
           {/* Email */}
           <div className='bento-box flex-col pt-20'>
