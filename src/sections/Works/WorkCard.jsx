@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import mergeIcon from '../../assets/icons/git-merge.svg';
 import globe from '../../assets/icons/globe.svg';
 
@@ -8,15 +9,15 @@ const WorkCard = ({workId,toggleOpen, thumbnail, title, links}) => {
         className='w-full rounded-t-2xl overflow-hidden h-full cursor-pointer'
         onClick={toggleOpen}
       >
-        <img src={thumbnail} className="h-full w-full object-cover object-center hover:scale-110 transition-all ease-linear" />
+        <img src={thumbnail} className="h-full w-full object-cover object-center hover:scale-105 transition-all ease-linear" />
       </div>
       <div className='flex gap-12 justify-center'>
-        <a className='flex gap-2 font-semibold' href="#">
-          <img src={mergeIcon} alt="" />
+        <a className='flex gap-2 font-semibold' href={links.repo} target='_blank' rel="noreferrer">
+          <img src={mergeIcon} />
           Repo
         </a>
-        <a className='flex gap-2 font-semibold' href="#">
-          <img src={globe} alt="" />
+        <a className='flex gap-2 font-semibold' href={links.live} target='_blank' rel="noreferrer">
+          <img src={globe} />
           Live
         </a>
       </div>
