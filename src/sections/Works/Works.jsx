@@ -1,7 +1,7 @@
 import panels from '../../assets/icons/panels.svg';
 import WorkCard from './WorkCard';
 import Modal from '../../components/Modal';
-import { jobHuntly_thumbnail, nikeNewArrival_thumbnail } from '../../assets/works';
+import { jobHuntly_thumbnail, docketsystem_thumbnail, nikeNewArrival_thumbnail } from '../../assets/works';
 import { useEffect, useState } from 'react';
 import Work1 from './Work1';
 import Work2 from './Work2';
@@ -19,7 +19,7 @@ const Works = () => {
       }
     },
     {
-      workId: 2,
+      workId: 3,
       title: "Nike New Arrival",
       thumbnail: nikeNewArrival_thumbnail,
       links:{
@@ -28,9 +28,9 @@ const Works = () => {
       }
     },
     {
-      workId: 3,
-      title: "Nike New Arrival",
-      thumbnail: nikeNewArrival_thumbnail,
+      workId: 2,
+      title: "Docket System",
+      thumbnail: docketsystem_thumbnail,
       links:{
         repo: "#",
         live: "#",
