@@ -6,30 +6,30 @@ const Frontend = () => {
       <h4 className="font-semibold text-center text-2xl text-white mb-11">
         Frontend
       </h4>
-      <div className="w-full  max-w-[330px] flex justify-between gap-2">
+      <div className="w-full  max-w-[330px] flex justify-around gap-2">
         <div className="col-1 flex flex-col gap-8">
           {/* Item */}
           <div className='flex items-start gap-2'>
             <img src={checkStar} />
             <div className='flex flex-col gap-2'>
-              <span className='text-white text-xl font-semibold'>HTML</span>
-              <span>Advanced</span>
+              <span className='text-white text-lg font-semibold'>HTML</span>
+              <span className='text-sm'>Advanced</span>
             </div>
           </div>
           {/* Item */}
           <div className='flex items-start gap-2'>
             <img src={checkStar} />
             <div className='flex flex-col gap-2'>
-              <span className='text-white text-xl font-semibold'>CSS</span>
-              <span>Advanced</span>
+              <span className='text-white text-lg font-semibold'>CSS</span>
+              <span className='text-sm'>Advanced</span>
             </div>
           </div>
           {/* Item */}
           <div className='flex items-start gap-2'>
             <img src={checkStar} />
             <div className='flex flex-col gap-2'>
-              <span className='text-white text-xl font-semibold'>Javascript</span>
-              <span>Advanced</span>
+              <span className='text-white text-lg font-semibold'>Javascript</span>
+              <span className='text-sm'>Advanced</span>
             </div>
           </div>
         </div>
@@ -39,16 +39,16 @@ const Frontend = () => {
           <div className='flex items-start gap-2'>
             <img src={checkStar} />
             <div className='flex flex-col gap-2'>
-              <span className='text-white text-xl font-semibold'>ReactJs</span>
-              <span>Advanced</span>
+              <span className='text-white text-lg font-semibold'>ReactJs</span>
+              <span className='text-sm'>Advanced</span>
             </div>
           </div>
           {/* Item */}
           <div className='flex items-start gap-2'>
             <img src={checkStar} />
             <div className='flex flex-col gap-2'>
-              <span className='text-white text-xl font-semibold'>Tailwind</span>
-              <span>Intermediate</span>
+              <span className='text-white text-lg font-semibold'>Tailwind</span>
+              <span className='text-sm'>Intermediate</span>
             </div>
           </div>
         </div>
