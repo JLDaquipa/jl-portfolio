@@ -5,6 +5,7 @@ import { jobHuntly_thumbnail, docketsystem_thumbnail, nikeNewArrival_thumbnail }
 import { useEffect, useState } from 'react';
 import Work1 from './Work1';
 import Work2 from './Work2';
+import Work3 from './Work3';
 
 const Works = () => {
 
@@ -101,7 +102,7 @@ const Works = () => {
         <Work2 toggleClose={toggleClose}/>
       </Modal>
       <Modal className={openWork === 3 ? "modal-active" : "modal-inactive"} clickOutside={toggleClose}>
-        <Work1 toggleClose={toggleClose}/>
+        <Work3 toggleClose={toggleClose}/>
       </Modal>
       <Modal className={openWork === 4 ? "modal-active" : "modal-inactive"} clickOutside={toggleClose}>
         <Work1 toggleClose={toggleClose}/>
