@@ -1,11 +1,12 @@
 import panels from '../../assets/icons/panels.svg';
 import WorkCard from './WorkCard';
 import Modal from '../../components/Modal';
-import { jobHuntly_thumbnail, docketsystem_thumbnail, nikeNewArrival_thumbnail } from '../../assets/works';
+import { jobHuntly_thumbnail, docketsystem_thumbnail, nikeNewArrival_thumbnail, vanlife_ss5 } from '../../assets/works';
 import { useEffect, useState } from 'react';
 import Work1 from './Work1';
 import Work2 from './Work2';
 import Work3 from './Work3';
+import Work4 from './Work4';
 
 const Works = () => {
 
@@ -39,8 +40,8 @@ const Works = () => {
     },
     {
       workId: 4,
-      title: "JobhHuntly",
-      thumbnail: jobHuntly_thumbnail,
+      title: "Vanlife",
+      thumbnail: vanlife_ss5,
       links:{
         repo: "#",
         live: "#",
@@ -105,7 +106,7 @@ const Works = () => {
         <Work3 toggleClose={toggleClose}/>
       </Modal>
       <Modal className={openWork === 4 ? "modal-active" : "modal-inactive"} clickOutside={toggleClose}>
-        <Work1 toggleClose={toggleClose}/>
+        <Work4 toggleClose={toggleClose}/>
       </Modal>
       <Modal className={openWork === 5 ? "modal-active" : "modal-inactive"} clickOutside={toggleClose}>
         <Work1 toggleClose={toggleClose}/>
