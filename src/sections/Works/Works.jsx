@@ -25,8 +25,8 @@ const Works = () => {
       title: "Nike New Arrival",
       thumbnail: nikeNewArrival_thumbnail,
       links:{
-        repo: "#",
-        live: "#",
+        repo: "https://github.com/JLDaquipa/nike-landing-page.git",
+        live: "https://nike-new-arrivals-page-23.netlify.app/",
       }
     },
     {
@@ -34,7 +34,7 @@ const Works = () => {
       title: "Docket System",
       thumbnail: docketsystem_thumbnail,
       links:{
-        repo: "#",
+        repo: "https://github.com/JLDaquipa/docketsystem.git",
         live: "#",
       }
     },

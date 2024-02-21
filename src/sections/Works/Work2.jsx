@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { docketsystem_thumbnail,docketsystem_cs1,docketsystem_cs3 } from "../../assets/works";
+import { docketsystem_thumbnail,docketsystem_cs1,docketsystem_cs2,docketsystem_cs3 } from "../../assets/works";
 import mergeIcon from '../../assets/icons/git-merge.svg';
 import globe from '../../assets/icons/globe.svg';
 
@@ -63,8 +63,9 @@ const Work2 = ({toggleClose}) => {
                 <p className='font-medium'>Our team did some research and interviews with the staff of the department. The department handles thousands of inquest and investigation records and mentioned needing help tracking them. For their report, they manually count how many files were handled on a specific date by a prosecutor, and they also manually create a list of inquest and investigation records a prosecutor and an encoder handle.</p>
                 <p className='font-medium'>So our team decided to build a web application that handles the department's inquest and investigation records with the CRUD method and saves records to a local database.</p>
                 <img src={docketsystem_cs1} alt="Docket system home page image" />
+                <img src={docketsystem_cs2} alt="Docket system home page image" />
                 <img src={docketsystem_cs3} alt="Docket system home page image" />
-                <p className='font-medium'>A new thing we learned during the development of the system is a way of converting Excel file data into MySQL tables. We are able to transfer a bulk of data in their Excel files containing updated records of inquests and investigations into the database without inputting everything manually.</p>
+                <p className='font-medium'>The new thing we learned during the development of the system is a way of converting Excel file data into MySQL tables. We are able to transfer a bulk of data in their Excel files containing updated records of inquests and investigations into the database without inputting everything manually.</p>
               </div>
             </div>
           </div>

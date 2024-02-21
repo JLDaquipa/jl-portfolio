@@ -45,11 +45,11 @@ const About = () => {
               <h2 className='text-[2rem] leading-none mb-8'>
                 About <span className='highlight'> Me</span>
               </h2>
-              <p className='font-semibold lg:max-w-[550px]'>
+              <p className='font-semibold lg:max-w-[600px]'>
                 Hello, I am Jay Lloyd Daquipa, an IT graduate from University of Southeastern Philippines, aspiring to be an effective web developer. I started my commitment to become a web developer back when I decided to take an online course on <a className="text-link" href="https://scrimba.com/" target='_blank' rel="noreferrer">Scrimba</a>. That time I found myself enjoying building web applications and learning new technologies which sparked my passion greatly in web development.
               </p>
               <br />
-              <p className='font-semibold lg:max-w-[550px]'>
+              <p className='font-semibold lg:max-w-[600px]'>
                 I’m currently helping out in our family business but while I’m at it, I continue spending days and nights improving my skills and knowledge. Building small to big projects to test and hone new technologies learned. You can check my git repositories at <a className="text-link" href="https://github.com/JLDaquipa" target='_blank' rel="noreferrer">Github</a> to see what projects I’m working on.
               </p>
             </div>
