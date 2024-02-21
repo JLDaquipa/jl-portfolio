@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { vanlife_ss1, vanlife_ss2, vanlife_ss3, vanlife_ss4, vanlife_ss5, } from "../../assets/works";
+import { vanlife_thumbnail, vanlife_ss1, vanlife_ss2, vanlife_ss3, vanlife_ss4, vanlife_ss5, } from "../../assets/works";
 import mergeIcon from '../../assets/icons/git-merge.svg';
 import globe from '../../assets/icons/globe.svg';
 
@@ -15,7 +15,7 @@ const Work4 = ({toggleClose}) => {
           <div className='bento-box p-2 overflow-hidden md:h-[400px] lg:h-[500px]'>
             <img 
               className='w-full object-cover rounded-xl'
-              src={vanlife_ss5} 
+              src={vanlife_thumbnail} 
             />
           </div>
         </div>

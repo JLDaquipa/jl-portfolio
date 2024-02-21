@@ -3,7 +3,7 @@ import jlPhoto from '../assets/profile-pic.jpg'
 const About = () => {
   return (
     <section id='about' className="section">
-      <div className="box-row md:flex-row-reverse">
+      <div className="box-row md:flex-row">
         <div className="box-col flex-col w-full md:w-[275px] lg:w-[380px]">
           <div className="flex gap-3 md:flex-col">
             <div className="bento-box overflow-hidden p-0 flex-1 relative">

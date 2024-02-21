@@ -19,8 +19,8 @@ function App() {
         <Splitter />
         <div className='flex flex-col gap-3'>
         <About />
-        <Skills />
         <Experiences />
+        <Skills />
         </div>
         <Splitter />
         <Works />

@@ -1,7 +1,7 @@
 import panels from '../../assets/icons/panels.svg';
 import WorkCard from './WorkCard';
 import Modal from '../../components/Modal';
-import { jobHuntly_thumbnail, docketsystem_thumbnail, nikeNewArrival_thumbnail, vanlife_ss5 } from '../../assets/works';
+import { jobHuntly_thumbnail, docketsystem_thumbnail, nikeNewArrival_thumbnail, vanlife_thumbnail } from '../../assets/works';
 import { useEffect, useState } from 'react';
 import Work1 from './Work1';
 import Work2 from './Work2';
@@ -41,7 +41,7 @@ const Works = () => {
     {
       workId: 4,
       title: "Vanlife",
-      thumbnail: vanlife_ss5,
+      thumbnail: vanlife_thumbnail,
       links:{
         repo: "#",
         live: "#",
@@ -74,7 +74,7 @@ const Works = () => {
 
   return (
     <section id='works' className="section">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
 
         <div className='bento-box flex-col gap-7 justify-end'>
           <div className='w-full flex flex-1 justify-center items-center py-6'>

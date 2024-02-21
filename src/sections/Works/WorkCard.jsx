@@ -12,11 +12,11 @@ const WorkCard = ({workId,toggleOpen, thumbnail, title, links}) => {
         <img src={thumbnail} className="h-full w-full object-cover object-center group-hover:scale-105 transition-all ease-linear" />
       </div>
       <div className='flex gap-12 justify-center'>
-        <a className='flex gap-2 font-semibold' href={links.repo} target='_blank' rel="noreferrer">
+        <a className='flex gap-2 font-semibold hover:translate-y-[-2px] transition-all ease-linear' href={links.repo} target='_blank' rel="noreferrer">
           <img src={mergeIcon} />
           Repo
         </a>
-        <a className='flex gap-2 font-semibold' href={links.live} target='_blank' rel="noreferrer">
+        <a className='flex gap-2 font-semibold hover:translate-y-[-2px] transition-all ease-linear' href={links.live} target='_blank' rel="noreferrer">
           <img src={globe} />
           Live
         </a>
