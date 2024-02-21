@@ -3,6 +3,7 @@ import hamburger from '../assets/icons/hamburger.svg'
 import Button from './Button';
 import SideBar from './SideBar';
 import { useState } from 'react';
+import Resume from '../assets/jl-resume.pdf';
 
 const Nav = () => {
   const [openSidebar,setOpenSidebar] = useState(false);
@@ -17,7 +18,9 @@ const Nav = () => {
 
   return (
     <nav className='w-full py-4 flex'>
-      <img className="cursor-pointer mr-auto" src={jlLogo} alt="JL Logo" />
+      <a href="/" className='cursor-pointer mr-auto'>
+        <img src={jlLogo} alt="JL Logo" />
+      </a>
       <img className="cursor-pointer sm:hidden" src={hamburger} onClick={handleOpen} />
       <SideBar className={openSidebar ? "sidebar-active":"sidebar-inactive"} close={handleClose} />
       <table className='mr-14 hidden sm:flex'>
@@ -41,9 +44,11 @@ const Nav = () => {
         </tr>
         </tbody>
       </table>
-      <Button className="hidden sm:flex">
-        Download CV
-      </Button>
+      <a href={Resume}>
+        <Button className="hidden sm:flex">
+          Download CV
+        </Button>
+      </a>
     </nav>
   )
 }

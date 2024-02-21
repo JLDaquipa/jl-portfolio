@@ -26,15 +26,9 @@ const Work2 = ({toggleClose}) => {
           </div>
           <div className='flex gap-3 justify-center'>
             <div className='bento-box flex-1 justify-center lg:w-fit'>
-              <a className='flex gap-2 font-semibold items-center' href="#">
-                <img src={mergeIcon} alt="" />
+              <a className='flex gap-2 font-semibold items-center' href="https://github.com/JLDaquipa/docketsystem.git" target='_blank' rel="noreferrer">
+                <img src={mergeIcon} />
                 Repo
-              </a>
-            </div>
-            <div className='bento-box flex-1 justify-center lg:w-fit'>
-              <a className='flex gap-3 font-semibold items-center ' href="#">
-                <img src={globe} alt="" />
-                Live
               </a>
             </div>
           </div>

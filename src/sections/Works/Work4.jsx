@@ -26,13 +26,13 @@ const Work4 = ({toggleClose}) => {
           </div>
           <div className='flex gap-3 justify-center'>
             <div className='bento-box flex-1 justify-center lg:w-fit'>
-              <a className='flex gap-2 font-semibold items-center' href="#">
+              <a className='flex gap-2 font-semibold items-center' href="https://github.com/JLDaquipa/vanlife.git" target='_blank' rel="noreferrer">
                 <img src={mergeIcon} alt="" />
                 Repo
               </a>
             </div>
             <div className='bento-box flex-1 justify-center lg:w-fit'>
-              <a className='flex gap-3 font-semibold items-center ' href="#">
+              <a className='flex gap-3 font-semibold items-center ' href="https://jl-daquipa-vanlife.netlify.app/" target='_blank' rel="noreferrer">
                 <img src={globe} alt="" />
                 Live
               </a>

@@ -41,9 +41,11 @@ const Hero = () => {
           {/* Socials Links */}
           <div className='bento-box'>
             <div className='social flex flex-1 justify-center'>
-              <svg className="fill-slate-gray cursor-pointer hover:fill-primary-orange smooth-transition" xmlns="http://www.w3.org/2000/svg" width="17" height="32" viewBox="0 0 17 32" fill="none">
-                <path d="M11.3333 18.4H15.381L17 12H11.3333V8.8C11.3333 7.15299 11.3333 5.6 14.5714 5.6H17V0.22416C16.4727 0.15496 14.4791 0 12.3742 0C7.97932 0 4.85714 2.65098 4.85714 7.51954V12H0V18.4H4.85714V32H11.3333V18.4Z"/>
-              </svg>
+              <a href="https://www.facebook.com/jaylloyd.daquipa/" target='_blank' rel="noreferrer">
+                <svg className="fill-slate-gray cursor-pointer hover:fill-primary-orange smooth-transition" xmlns="http://www.w3.org/2000/svg" width="17" height="32" viewBox="0 0 17 32" fill="none">
+                  <path d="M11.3333 18.4H15.381L17 12H11.3333V8.8C11.3333 7.15299 11.3333 5.6 14.5714 5.6H17V0.22416C16.4727 0.15496 14.4791 0 12.3742 0C7.97932 0 4.85714 2.65098 4.85714 7.51954V12H0V18.4H4.85714V32H11.3333V18.4Z"/>
+                </svg>
+              </a>
             </div>
             {/* Github */}
             <div className='social flex flex-1 justify-center'>

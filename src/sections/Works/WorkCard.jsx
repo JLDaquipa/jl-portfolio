@@ -16,10 +16,15 @@ const WorkCard = ({workId,toggleOpen, thumbnail, title, links}) => {
           <img src={mergeIcon} />
           Repo
         </a>
-        <a className='flex gap-2 font-semibold hover:translate-y-[-2px] transition-all ease-linear' href={links.live} target='_blank' rel="noreferrer">
-          <img src={globe} />
-          Live
-        </a>
+        {
+          links.live !== "#" 
+          && 
+          <a className='flex gap-2 font-semibold hover:translate-y-[-2px] transition-all ease-linear' href={links.live} target='_blank' rel="noreferrer">
+            <img src={globe} />
+            Live
+          </a>
+        }
+        
       </div>
     </div>
   )

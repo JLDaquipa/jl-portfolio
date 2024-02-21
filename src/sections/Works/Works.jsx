@@ -43,19 +43,10 @@ const Works = () => {
       title: "Vanlife",
       thumbnail: vanlife_thumbnail,
       links:{
-        repo: "#",
-        live: "#",
+        repo: "https://github.com/JLDaquipa/vanlife.git",
+        live: "https://jl-daquipa-vanlife.netlify.app/",
       }
-    },
-    {
-      workId: 5,
-      title: "Nike New Arrival",
-      thumbnail: nikeNewArrival_thumbnail,
-      links:{
-        repo: "#",
-        live: "#",
-      }
-    },
+    }
   ]
 
   const [openWork, setOpenWork] = useState(0)
