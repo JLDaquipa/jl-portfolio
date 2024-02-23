@@ -51,6 +51,14 @@ const Frontend = () => {
               <span className='text-sm'>Intermediate</span>
             </div>
           </div>
+          {/* Item */}
+          <div className='flex items-start gap-2'>
+            <img src={checkStar} />
+            <div className='flex flex-col gap-2'>
+              <span className='text-white text-lg font-semibold'>Figma</span>
+              <span className='text-sm'>Basic</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
