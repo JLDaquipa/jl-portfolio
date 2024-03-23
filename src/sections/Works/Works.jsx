@@ -65,16 +65,16 @@ const Works = () => {
 
   return (
     <section id='works' className="section">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
-        <div className='bento-box flex-col gap-7 justify-end'>
+        {/* <div className='bento-box flex-col gap-7 justify-end'>
           <div className='w-full flex flex-1 justify-center items-center py-6'>
             <img className="object-cover w-2/3" src={panels}/>
           </div>
           <h3 className='text-center text-[2rem] leading-none'>
             My <span className='highlight'> Works</span>
           </h3>
-        </div>
+        </div> */}
         {
           works.map((work) => (
             <WorkCard

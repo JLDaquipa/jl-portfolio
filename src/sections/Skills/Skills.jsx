@@ -5,6 +5,7 @@ const Skills = () => {
   return (
     <section className="section">
       <div className="box-row md:flex-row flex-wrap">
+
         <div className="bento-box flex-col items-center gap-7 max-lg:w-full md:flex-1 ">
           <div className="flex flex-1 justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="170" height="169" viewBox="0 0 170 169" fill="none">
@@ -19,9 +20,10 @@ const Skills = () => {
             </svg>
           </div>
           <h2 className='text-center text-[2rem] leading-none'>
-              Technical <span className='highlight'> Skills</span>
+              Tech <span className='highlight'> Stack</span>
           </h2>
         </div>
+        
         <Frontend />
         <Backend />
       </div>

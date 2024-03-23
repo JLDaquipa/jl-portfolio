@@ -11,20 +11,20 @@ import Splitter from './components/Splitter';
 function App() {
   return (
     <>
-      <header className='max-container px-6 pt-6 mb-6'>
+      <header className='max-container px-6 pt-6 mb-6 sticky top-0 bg-primary-black z-10'>
         <Nav />
       </header>
       <main className='max-container px-6  mb-6 flex flex-col gap-20 '>
-        <Hero />
-        <Splitter />
+        {/* <Splitter /> */}
         <div className='flex flex-col gap-3'>
+        <Hero />
         <About />
-        <Experiences />
+        {/* <Experiences /> */}
         <Skills />
-        </div>
-        <Splitter />
         <Works />
-        <Splitter />
+        </div>
+        {/* <Splitter /> */}
+        {/* <Splitter /> */}
         <Contact />
         <Splitter />
         <Footer />

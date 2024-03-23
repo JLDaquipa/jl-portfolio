@@ -18,8 +18,8 @@ const Nav = () => {
 
   return (
     <nav className='w-full py-4 flex'>
-      <a href="/" className='cursor-pointer mr-auto'>
-        <img src={jlLogo} alt="JL Logo" />
+      <a href="/" className='cursor-pointer mr-auto flex items-center'>
+        <img src={jlLogo} alt="JL Logo" width={50} height={50}/>
       </a>
       <img className="cursor-pointer sm:hidden" src={hamburger} onClick={handleOpen} />
       <SideBar className={openSidebar ? "sidebar-active":"sidebar-inactive"} close={handleClose} />
