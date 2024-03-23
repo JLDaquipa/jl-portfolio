@@ -10,7 +10,7 @@ const Hero = () => {
           <div className='profile rounded-full overflow-hidden w-[5rem] h-[5rem]'>
             <img src={jlPhoto} alt="" className='w-full object-cover'/>
           </div>
-          <h1 className='w-full text-3xl lg:text-[3rem] font-bold leading-tight max-w-[700px]'>
+          <h1 className='w-full text-3xl md:text-[2.5rem] lg:text-[3rem] font-bold leading-tight max-w-[700px]'>
             Hello, I’m <span className="highlight"> Jay Lloyd</span>, a <span className="highlight ">Front-end</span> Web Developer based in the <span className="highlight"> Philippines</span>
           </h1>
           <a 
@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
         <div className='bento-box flex-col justify-end gap-7 md:max-w-[410px]'>
         <div className='w-full flex flex-1 justify-center items-center py-4'>
-              <img src={stars} width={160} height={160}/>
+              <img className='object-contain' src={stars} />
             </div>
           <p className='font-semibold text-xl'>Driven by a <span className='highlight text-wrap'> deep passion</span> for creating web solutions.</p>
           <a 
