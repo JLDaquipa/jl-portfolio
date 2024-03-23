@@ -14,10 +14,10 @@ const Hero = () => {
             Hello, I’m <span className="highlight"> Jay Lloyd</span>, a <span className="highlight ">Front-end</span> Web Developer based in the <span className="highlight"> Philippines</span>
           </h1>
           <a 
-            href="#about"
+            href="#works"
             className='group text-slate-gray font-semibold text-lg flex items-center gap-4 w-fit leading-none'
           >
-            About Me
+            See My Works
             <svg className='group-hover:translate-x-1 smooth-transition' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M11.75 7L18 13M18 13L11.75 19M18 13H3" stroke="#666666" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
