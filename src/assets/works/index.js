@@ -13,6 +13,8 @@ import vanlife_ss2 from './vanlife/vanlife_ss2.png';
 import vanlife_ss3 from './vanlife/vanlife_ss3.png';
 import vanlife_ss4 from './vanlife/vanlife_ss4.png';
 import vanlife_ss5 from './vanlife/vanlife_ss5.png';
+import weblog_ss1 from './weblog/weblog-ss1.png';
+import carhub_ss1 from './carhub/carhub-ss1.png';
 
 
 export {
@@ -31,4 +33,6 @@ export {
   vanlife_ss3,
   vanlife_ss4,
   vanlife_ss5,
+  weblog_ss1,
+  carhub_ss1,
 }

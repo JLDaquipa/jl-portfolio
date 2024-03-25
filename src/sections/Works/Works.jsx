@@ -1,16 +1,27 @@
 import panels from '../../assets/icons/panels.svg';
 import WorkCard from './WorkCard';
 import Modal from '../../components/Modal';
-import { jobHuntly_thumbnail, docketsystem_thumbnail, nikeNewArrival_thumbnail, vanlife_thumbnail } from '../../assets/works';
+import { jobHuntly_thumbnail, docketsystem_thumbnail, nikeNewArrival_thumbnail, vanlife_thumbnail, weblog_ss1, carhub_ss1 } from '../../assets/works';
 import { useEffect, useState } from 'react';
 import Work1 from './Work1';
 import Work2 from './Work2';
 import Work3 from './Work3';
 import Work4 from './Work4';
+import Work5 from './Work5';
+import Work6 from './Work6';
 
 const Works = () => {
 
   const works = [
+    {
+      workId: 6,
+      title: "CarHub",
+      thumbnail: carhub_ss1,
+      links:{
+        repo: "https://github.com/JLDaquipa/carhub-website.git",
+        live: "https://jl-daquipa-carhub-website.vercel.app/",
+      }
+    },
     {
       workId: 1,
       title: "JobhHuntly",
@@ -30,12 +41,12 @@ const Works = () => {
       }
     },
     {
-      workId: 2,
-      title: "Docket System",
-      thumbnail: docketsystem_thumbnail,
+      workId: 5,
+      title: "WeBlog",
+      thumbnail: weblog_ss1,
       links:{
-        repo: "https://github.com/JLDaquipa/docketsystem.git",
-        live: "#",
+        repo: "https://github.com/JLDaquipa/Refocus-Project-AdaptiveBlog.git",
+        live: "https://jl-daquipa-weblog.netlify.app/",
       }
     },
     {
@@ -46,7 +57,16 @@ const Works = () => {
         repo: "https://github.com/JLDaquipa/vanlife.git",
         live: "https://jl-daquipa-vanlife.netlify.app/",
       }
-    }
+    },
+    {
+      workId: 2,
+      title: "Docket System",
+      thumbnail: docketsystem_thumbnail,
+      links:{
+        repo: "https://github.com/JLDaquipa/docketsystem.git",
+        live: "#",
+      }
+    },
   ]
 
   const [openWork, setOpenWork] = useState(0)
@@ -100,7 +120,10 @@ const Works = () => {
         <Work4 toggleClose={toggleClose}/>
       </Modal>
       <Modal className={openWork === 5 ? "modal-active" : "modal-inactive"} clickOutside={toggleClose}>
-        <Work1 toggleClose={toggleClose}/>
+        <Work5 toggleClose={toggleClose}/>
+      </Modal>
+      <Modal className={openWork === 6 ? "modal-active" : "modal-inactive"} clickOutside={toggleClose}>
+        <Work6 toggleClose={toggleClose}/>
       </Modal>
     </section>
   )
