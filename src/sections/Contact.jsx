@@ -40,7 +40,7 @@ const Contact = () => {
       <div className='box-row md:flex-row'>
         <div className='box-col flex-col'>
           {/* Email */}
-          <div className='bento-box flex-col pt-20'>
+          <div className='bento-box flex-col justify-end pt-20 flex-1'>
             <span className='text-xl font-semibold text-primary-orange mb-3'>Email</span>
             <span className='text-lg font-semibold mb-5'>daquipajaylloyd95@gmail.com</span>
             <a 
@@ -53,13 +53,8 @@ const Contact = () => {
               </svg>
             </a>
           </div>
-          {/* Phone */}
-          <div className='bento-box flex-col justify-end pt-20 lg:h-full'>
-            <span className='text-xl font-semibold text-primary-orange mb-3'>Phone</span>
-            <span className='text-lg font-semibold'>+63 995 965 9169</span>
-          </div>
           {/* Email */}
-          <div className='bento-box flex-col pt-20'>
+          <div className='bento-box flex-col justify-end pt-20 flex-1'>
             <span className='text-xl font-semibold text-primary-orange mb-3'>Messenger</span>
             <span className='text-lg font-semibold mb-5'>jaylloyd.daquipa</span>
             <a 
